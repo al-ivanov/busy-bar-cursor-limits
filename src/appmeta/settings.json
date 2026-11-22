@@ -1,0 +1,21 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "refresh_interval_min": {
+      "type": "integer",
+      "label": "Refresh Interval (minutes)",
+      "default": 5
+    },
+    "display_mode": {
+      "type": "enum",
+      "label": "Default Display Mode",
+      "default": "remaining",
+      "options": [
+        { "value": "remaining", "label": "Remaining % (e.g. 55% LEFT)" },
+        { "value": "used", "label": "Used % (e.g. 45% USED)" },
+        { "value": "reset", "label": "Days to Reset (e.g. 14D RESET)" }
+      ]
+    }
+  }
+}
